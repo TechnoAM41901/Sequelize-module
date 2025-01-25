@@ -1,0 +1,75 @@
+
+Sequelize: An ORM (Object-Relational Mapper) for Node.js, making it easy 
+to work with databases using JavaScript by mapping objects to database tables.
+It supports various SQL databases, including MySQL, PostgreSQL, and SQLite.
+
+MySQL: An open-source relational database management system that uses
+ SQL (Structured Query Language) to manage and manipulate databases.
+ It is widely used for web applications and data storage due to its
+  reliability and performance.
+
+MySQL2: A modern and fast MySQL client for Node.js, which supports all 
+MySQL features, including prepared statements, but offers better performance
+ and additional features like Promise support.
+
+
+libraries to be installed:
+
+express: Web framework for Node.js.
+
+mysql2: MySQL client for Node.js.
+
+sequelize: ORM for Node.js that works with MySQL.
+
+body-parser: Middleware to parse request bodies.
+
+npm install express mysql2 sequelize body-parser
+
+
+
+//postman tool
+
+Test CRUD Operations using Postman
+Open Postman and test the following CRUD operations:
+
+1. Create Product
+Method: POST
+URL: http://localhost:3000/products
+
+
+Body (JSON):
+
+{
+  "name": "Laptop",
+  "price": 1200.50,
+  "description": "High-performance laptop"
+}
+
+
+2. Get All Products
+Method: GET
+URL: http://localhost:3000/products
+
+
+
+3. Get a Single Product
+Method: GET
+URL: http://localhost:3000/products/1
+
+
+
+4. Update a Product
+Method: PUT
+URL: http://localhost:3000/products/1
+
+Body (JSON):
+
+{
+  "name": "Updated Laptop",
+  "price": 1100.00,
+  "description": "Updated laptop description"
+}
+
+5. Delete a Product
+Method: DELETE
+URL: http://localhost:3000/products/1
